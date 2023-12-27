@@ -49,5 +49,5 @@
     - name: Restart Nginx container
       ansible.builtin.docker_container:
         name: "{{ nginx_container_name }}"
-        state: started
+        state: restarted
         restart_policy: always
